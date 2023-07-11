@@ -18,6 +18,7 @@
 
 # Build dist release
 @build:
+  rm -rf dist
   yarn gulp copy
   yarn --cwd base build
   mv base/dist ./dist
